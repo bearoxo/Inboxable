@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    
+    <h1>FUCKING BITCHH</h1>
+
+    <button id="btn">CLICK ME RETARD</button>
+
+    <script>
+
+      document.getElementById("btn").addEventListener("click", doStuff);
+
+      function doStuff(){
+        google.script.run.userClicked();
+      }
+
+      function chromeExtension(){
+        return contentService
+          .createTextOutput(JSON.stringify({"myVar": "myValue"}))
+          .setMimeType(ContentService.MimeType.JAVASCRIPT);
+      }
+
+    </script>
+
+  </body>
+</html>
+

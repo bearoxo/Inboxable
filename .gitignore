@@ -1,0 +1,31 @@
+# Ignore all files and folders starting with "."
+.*
+# Except...
+!**/.gitignore
+
+# config file or folder
+**/config
+**/config.json
+
+# Logs
+**/logs
+*.log
+
+# Project credentials stored library
+**/credentials
+
+# Clasp files
+**/.clasp.json
+**/.clasprc.json
+**/.creds.json
+
+# Dependency directories
+node_modules
+
+# Backup folder
+backup
+
+# dotenv environment variables file
+**/.env
+**/.env.test
+**/.env.production
