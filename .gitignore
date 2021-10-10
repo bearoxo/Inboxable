@@ -2,7 +2,7 @@
 .*
 # Except...
 !**/.gitignore
-!**/.git
+!**/.github
 
 # config file or folder
 **/config
