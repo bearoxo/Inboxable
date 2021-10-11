@@ -3,10 +3,10 @@
  * @returns {Jdbc.JdbcConnection}
  */
 function db_connect(){
-  const username = InboxableInstance._username;
-  const password = InboxableInstance._password;
-  const connection_name = InboxableInstance._connection_name;
-  const db_name = InboxableInstance._db_name;
+  const username = _db_config_ed._username;
+  const password = _db_config_ed._password;
+  const connection_name = _db_config_ed._connection_name;
+  const db_name = _db_config_ed._db_name;
   const url = "jdbc:google:mysql://" + connection_name + db_name;
   return Jdbc.getCloudSqlConnection(url, username, password);
 }
